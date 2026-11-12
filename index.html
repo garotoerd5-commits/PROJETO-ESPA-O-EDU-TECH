@@ -1,91 +1,73 @@
-<!DOCTYPE html> <!-- Específica o Tipo de Documento - HTML 5 -->
+<!doctype html>
+<!-- Específica o tipo de documento HTML5 -->
+
 <html lang="pt-BR">
-    <head> <!-- CABEÇA DO SITE - CONFIGURAÇÕES E METADADOS-->
-        <title>EduTech - Formação em Tecnologia</title>
-        <meta charset="UTF-8"> <!--Permite acentos, cedilha e caracteres especiais-->
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
-            <!--Aplica responsividade no site - adapta pra telas menores-->
-    </head>
+  <!-- Caberça do site - configuraçção e metadadados -->
+  <head>
+    <!-- O 'Head' precisa necessariamente do 'title' -->
+    <title>EduTech - Formação em tecnologia</title>
+    <meta charset="UTF-8" />
+    <!-- Configuração do teclado brasileiro -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tag de resposividade-->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-    <body> <!-- CORPO DO SITE - CONTEÚDO VISÍVEL PARA TODOS-->
+  <body>
+    <!-- Corpo do site - Conteúdo visivél pra todos -->
+    <header>
+      <!-- Cabeçalho da página -->
+      <div>
+        <!-- Criar conteiner-->
+        <a href="index.html" class="logo">Edu<span>Tech</span></a>
+      </div>
+      <nav>
+        <a href="index.html">Início</a>
+        <!-- 'a' e 'href' para ligar com outras páginas do projeto -->
+        <a href="Pages/sobre.html">Sobre</a>
+        <a href="Pages/cursos.html">Cursos</a>
+        <a href="Pages/contato.html">Contato</a>
+      </nav>
+    </header>
 
-        <header> <!-- CABEÇALHO DO CORPO DO SITE -->
-                <div>
-                    <a href="index.html">Edu<span>Tech</span></a>
-                </div>
-                <nav>
-                    <a href="index.html">Início</a>
-                    <a href="pages/sobre.html">Sobre</a>
-                    <a href="pages/cursos.html">Cursos</a>
-                    <a href="pages/contato.html">Contato</a>
-                </nav>
-         
-        </header>
-
-        <!-- CONTEÚDO DA PÁGINA DO SITE -->
-         <main>
-            <!--Seção Principal da pagina sobre --> 
-       
-            </section>
-                <!--Seção Principal da pagina sobre --> 
-                <h2> Sobre a EduTech</h2>
-
-                <p>A EduTech e uma escola de tecnologia focada em formação pratica</p>
-                <h3> Nosa Missão</h3>
-                <p> Transformar vidas por meio da educação tecnologicas</p>
-
-                <h3> Nossos Valores</h3>
-                <!--Lista de valores-->
-
-                <ul>
-                    <li>Compromisso</li>
-                    <li>Inovação</li>
-                    <li>Transferencia</li>
-                </ul>
-
-            </section>
-
-        <main>          
-              <section>
-                        <div>
-                            <h1>Formação em Tecnologia para o mercado real</h1>
-                            <p>Aprenda desenvolvimento web, lógica e banco de dados com aulas práticas</p>
-                            <a href="pages/cursos.html">Ver Cursos</a>
-                            <a href="pages/contato.html">Fale Conosco</a>
-                        </div>  
-              </section>
-             
-              <section>
-                    <div>
-                        <h2>Por que estudar na EduTech?</h2>
-                        <div>
-                            <article>
-                                <h3>Projetos Reais</h3>
-                                <p>Você desenvolve sites com base em situações profissionais</p>
-                            </article>
-
-                            <article>
-                                <h3>Material Didático</h3>
-                                <p>Conteúdo e exercícios práticas</p>
-                            </article>
-
-                            <article>
-                                <h3>Suporte do instrutor</h3>
-                                <p>Acompanhamento durante todo processo</p>
-                            </article>
-                        </div>
-                    </div>
-              </section>
-
-        </main>
-
-        <!-- -------------------------- -->
-
-        <footer> <!-- RODAPÉ DO CORPO DO SITE -->
-            <p>2026 EduTech. Todos direitos reservados</p>
-            <p><a href="pages/contato.html">Entre em contato</a></p>
-        </footer>
-
-    </body>
-
+    <!-- Conteúdo da página -->
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Formação em tecnologia para o mercado real</h1>
+          <p>
+            Aprenda desenvolvimento web, lógica e banco de dados, com aulas
+            práticas.
+          </p>
+          <a href="pages/cursos.html" class="btn-primario">Ver cursos</a>
+          <a href="pages/contato.html" class="btn-secundario">Fale conosco</a>
+        </div>
+      </section>
+      <section class="destaque">
+        <div>
+          <h2>Por que estudar na EduTech?</h2>
+          <div>
+            <article class="card">
+              <h3>Projetos reais</h3>
+              <p>Você desenvolve sites com base em situações profissionais</p>
+            </article>
+            <article class="card">
+              <h3>Material didático</h3>
+              <p>Conteúdo e exercícios práticos</p>
+            </article>
+            <article class="card">
+              <h3>Suporte do instrutor</h3>
+              <p>Acompanhamente durante todo o aprendizado</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------ -->
+    <footer>
+      <!-- Rodapé da página -->
+      <p>©2026 EduTech. Todos os direitos reservados</p>
+      <p><a href="contato.html">Entre em contato conosco</a></p>
+    </footer>
+  </body>
 </html>

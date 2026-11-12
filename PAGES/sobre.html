@@ -1,68 +1,78 @@
-<!DOCTYPE html> <!-- Tipo de Docuemnto - HTML 5 -->
+<!doctype html>
+<!-- Específica o tipo de documento HTML5 -->
+
 <html lang="pt-BR">
-    <head> <!-- CABEÇA DO SITE - CONFIGURAÇÕES E METADADOS-->
-        <title> EduTech - Formação em Tecnologia</title>
-        <meta charset="UTF-8"> <!-- Permite acentos, cedilha e caracteres especiais-->
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    </head>
+  <!-- Caberça do site - configuraçção e metadadados -->
+  <head>
+    <!-- O 'Head' precisa necessariamente do 'title' -->
+    <title>EduTech - Formação em tecnologia</title>
+    <meta charset="UTF-8" />
+    <!-- Configuração do teclado brasileiro -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tag de resposividade-->
+    <link rel="stylesheet" href="../CSS/style.css" />
 
-    <body> <!-- CORPO DO SITE - CONTEÚDO VISÍVEL PARA TODOS-->
-        <header> <!-- CABEÇALHO DO CORPO DO SITE -->
-                <div>
-                    <a href="../index.html">Edu<span>Tech</span></a>
-                </div>
-                <nav>
-                    <a href="../index.html">Início</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="contato.html">Contato</a>
-                </nav>
-         
-        </header>
-        
-        <!-- CONTEÚDO DA PÁGINA DO SITE -->
-        <main>
-            <!--     Seção Principal da Pagina sobre --> 
-                 <section>
-                    <!-- Titulo da Pagina -->
-                     <h2>Sobre a EduTech</h2>
+    <style>
+      .sobre {
+        padding: 30 px 20px;
+      }
 
-                     <!-- Texto falando sobre a empresa -->
-                      <p>A EduTech e uma escola de tecnologia focado em formação pratica</p>
+      .sobre p {
+        text-align: center;
+      }
 
-                      <!-- Subtitulo: Missão da empresa -->
-                       <h3>Nossa Missão</h3>
-                       <p>Transformar vidas por meio da educação tecnologicas</p>
+      .valores-lista {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
 
-                       <!-- Substitulo: Valores da empresa-->
-                        <h3>Nossos Valores</h3>
+    </style>
+  </head>
 
-                        <!-- Lista de Valores-->
-                         <ul>
-                            <Li>Compromisso</Li>
-                            <Li>Inovação</Li>
-                            <LI>Transparência</LI>
-                         </ul>
-                 </section>
-        </main>
+  <body>
+    <!-- Corpo do site - Conteúdo visivél pra todos -->
+    <header>
+      <!-- Cabeçalho da página -->
+      <div>
+        <!-- Criar conteiner-->
+        <a href="index.html" class="logo">Edu<span>Tech</span></a>
+      </div>
+      <nav>
+        <a href="../index.html">Início</a>
+        <!-- 'a' e 'href' para ligar com outras páginas do projeto -->
+        <a href="sobre.html">Sobre</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
 
-        <!-- --------------------------- -->
-        
-        <footer> <!-- RODAPÉ DO CORPO DO SITE -->
-            <p>©2026 EduTech. Todos os direitos reservados </p>
-            <p><a href="pages/contato.html">Entre em Contato</a></p>
-        </footer>
-
-
-
-    </body>
-
-
-
-
-
-
-
-
-
+    <!-- Conteúdo da página -->
+    <main class="">
+      <!-- Seção princial da página sobre -->
+      <section class="sobre">
+        <!-- Título da página -->
+        <h2>Sobre a EduTech</h2>
+        <!-- Texto falando sobre a empresa -->
+        <p>A Edutech é uma escola de tecnologia focada em formação prática</p>
+        <!-- Subtítulo focado na missão da empresa -->
+        <h3>Nossa missão</h3>
+        <p>Transformar vidas por meio da educação tecnológica</p>
+        <!-- ------------------------------------------------------------- -->
+        <h3>Nossos valores</h3>
+        <!-- Lista não ordenada -->
+        <ul class="valores-lista">
+          <li>Compromisso</li>
+          <li>Inovação</li>
+          <li>Transparência</li>
+        </ul>
+      </section>
+    </main>
+    <!-- ------------------ -->
+    <footer>
+      <!-- Rodapé da página -->
+      <p>©2026 EduTech. Todos os direitos reservados</p>
+      <p><a href="contato.html">Entre em contato conosco</a></p>
+    </footer>
+  </body>
 </html>

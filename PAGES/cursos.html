@@ -1,76 +1,69 @@
-<!DOCTYPE html> <!-- Tipo de Docuemnto - HTML 5 -->
+<!doctype html>
+<!-- Específica o tipo de documento HTML5 -->
+
 <html lang="pt-BR">
-    <head> <!-- CABEÇA DO SITE - CONFIGURAÇÕES E METADADOS-->
-        <title> EduTech - Formação em Tecnologia</title>
-        <meta charset="UTF-8"> <!-- Permite acentos, cedilha e caracteres especiais-->
-        <meta name="viewport" content="width-device-width,initial-scale=1.0">
-    </head>
+  <!-- Caberça do site - configuraçção e metadadados -->
+  <head>
+    <!-- O 'Head' precisa necessariamente do 'title' -->
+    <title>EduTech - Formação em tecnologia</title>
+    <meta charset="UTF-8" />
+    <!-- Configuração do teclado brasileiro -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tag de resposividade-->
+    <link rel="stylesheet" href="../CSS/style.css">
+  </head>
 
-    <body> <!-- CORPO DO SITE - CONTEÚDO VISÍVEL PARA TODOS-->
-        <header> <!-- CABEÇALHO DO CORPO DO SITE -->
-                <div>
-                    <a href="../index.html">Edu<span>Tech</span></a>
-                </div>
-                <nav>
-                    <a href="../index.html">Início</a>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="cursos.html">Cursos</a>
-                    <a href="contato.html">Contato</a>
-                </nav>
-         
-        </header>
-        
-        <!-- CONTEÚDO DA PÁGINA DO SITE -->   
-         <main>
-            <!-- Seção dos cursos-->
-             <section>
-                <h2>Nossos Cursos</h2>
+  <body>
+    <!-- Corpo do site - Conteúdo visivél pra todos -->
+    <header>
+      <!-- Cabeçalho da página -->
+      <div>
+        <!-- Criar conteiner-->
+        <a href="index.html" class="logo">Edu<span>Tech</span></a>
+      </div>
+      <nav>
+        <a href="../index.html">Início</a>
+        <!-- 'a' e 'href' para ligar com outras páginas do projeto -->
+        <a href="sobre.html">Sobre</a>
+        <a href="cursos.html">Cursos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </header>
 
-                <!-- Card dos cursos-->
-                 <article>
-                    <img src="../IMAGES/desenvolvimento web.jpg" alt="Desenvolvimento WEB">
-                    <h3>Desenvolvimento Web</h3>
-                    <p> Aprenda HTML, CSS, JS e pratica modernas 
-                        de desenvolvimento. 
-                    </p>
-                    <strong>CH</strong> 40h
-                    <article>
-
-                    </article>
-                    <img src="../IMAGES/INFORMATICABASICA.jpg" alt="Informatica Basica">
-                    <h3>Desenvolvimento WEB</h3>
-                    <p>Domine o uso do computador e aplicativos essenciais
-                    </p>
-                    <strong>CH</strong> 30h
-                    <article>
-
-                    </article>
-                    <img src="../IMAGES/CURSO DE JOGOS.png" alt="Jogos Digitais">
-                    <h3>Jogos Digitais</h3>
-                    <p>Aprenda a desenvolver jogos digitais desde o design ate a programação.
-                    </p>
-                    <strong>CH:</strong> 60h
-                 </article>
-             </section>
-         </main>
-        
-        <!-- --------------------------- -->
-        
-        <footer> <!-- RODAPÉ DO CORPO DO SITE -->
-            <p>©2026 EduTech. Todos os direitos reservados </p>
-            <p><a href="pages/contato.html">Entre em Contato</a></p>
-        </footer>
-
-
-
-    </body>
-
-
-
-
-
-
-
-
-
+    <!-- Conteúdo da página -->
+    <main>
+      <!-- Sessão dos cursos-->
+      <section>
+        <h2>Nossos cursos</h2>
+        <!-- Cards dos cursos -->
+        <article>
+          <img src="../IMAGES/CURSO DE JOGOS.png" alt="Jogos digitais" />
+          <h3>Desenvolvimento Web</h3>
+          <p>Aprenda HTML, css e práticas modernas de Desenvolvimento.</p>
+          <strong>Carga horária:</strong> 40H
+        </article>
+        <article>
+          <img src="../IMAGES/INFORMATICABASICA.jpg" alt="Informática básica" />
+          <h3>Informática básica</h3>
+          <p>Domine o uso de computador e aplicativos essenciais</p>
+          <strong>Carga horária:</strong> 30H
+        </article>
+        <article>
+          <img src="../IMAGES/CURSO DE JOGOS.png" alt="Jogos digitais" />
+          <h3>Jogos Digitais</h3>
+          <p>
+            Aprenda a desenvolver jogo digitais, desde o design a programação
+          </p>
+          <strong>Carga horária:</strong> 60H
+        </article>
+      </section>
+    </main>
+    <!-- ------------------ -->
+    <footer>
+      <!-- Rodapé da página -->
+      <p>©2026 EduTech. Todos os direitos reservados</p>
+      <p><a href="contato.html">Entre em contato conosco</a></p>
+    </footer>
+  </body>
 </html>
+
